@@ -14,3 +14,4 @@ Calcolo il prezzo del biglietto: 0,21 € *(n° km)
 
  ? SE età passeggero <18: prezzo del biglietto - (prezzo del biglietto/100*20)
  ALTRIMENTI ? SE età passeggero >65: prezzo del biglietto - (prezzo del biglietto/100*40)
+ALTRIMENTI mostra prezzo del biglietto senza sconti.
