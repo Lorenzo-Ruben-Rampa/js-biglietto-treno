@@ -1,7 +1,7 @@
 // biglietto del treno
 
 // INPUT
-// l'utente inserisce la usa età
+// l'utente inserisce la sua età
 const Userage = parseInt(prompt("inserire la propria età"));
 
 // l'utente inserisce i km del percorso del suo viaggio
@@ -10,7 +10,7 @@ const numeroKm = parseInt(prompt("inserire il numero dei km del proprio tragitto
 // ELABORAZIONE
 // calcolo prezzo biglietto dell'utente (salvandomi il dato)
 const multiply = numeroKm * 0.21;
-console.log("Prezzo del biglietto: ", multiply);
+console.log("Prezzo del biglietto: ", multiply.toFixed(10) + "€");
 
 // applico sconto in base all'età
 // SE utente < 18 anni
@@ -31,13 +31,13 @@ if (Userage < 18) {
 // il PC ci restituisce il preventivo del prezzo del biglietto
 if (Userage < 18) { 
 
-console.log("Preventivo biglietto scontato: ", prezzosconto20);
-console.log("Pagherai: ", prezzosconto20.toFixed(10) + "€");
+    console.log("Preventivo biglietto scontato: ", prezzosconto20);
+    console.log("Pagherai: ", prezzosconto20.toFixed(10) + "€");
 
 // ALTRIMENTI SE utente < 65 anni
 } else if (Userage > 65) {
-console.log("Preventivo biglietto scontato: ", prezzosconto40 + "€");
-console.log("Pagherai: ", prezzosconto40.toFixed(10) + "€");
+    console.log("Preventivo biglietto scontato: ", prezzosconto40 + "€");
+    console.log("Pagherai: ", prezzosconto40.toFixed(10) + "€");
 
 
 // ALTRIMENTI SE utente >18 e < 65 anni
